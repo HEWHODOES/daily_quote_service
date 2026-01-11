@@ -1,0 +1,64 @@
+{
+  "quotes": [
+    {
+      "quote": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs",
+      "source": "Stanford Commencement Speech 2005",
+      "categories": ["Motivation", "Work"]
+    },
+    {
+      "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "source": null,
+      "categories": ["Motivation", "Wisdom"]
+    },
+    {
+      "quote": "I think, therefore I am.",
+      "author": "René Descartes",
+      "source": "Discourse on the Method",
+      "categories": ["Philosophy"]
+    },
+    {
+      "quote": "The unexamined life is not worth living.",
+      "author": "Socrates",
+      "source": "Plato's Apology",
+      "categories": ["Philosophy", "Wisdom"]
+    },
+    {
+      "quote": "In the middle of difficulty lies opportunity.",
+      "author": "Albert Einstein",
+      "source": null,
+      "categories": ["Motivation", "Wisdom"]
+    },
+    {
+      "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
+      "author": null,
+      "source": "Chinese Proverb",
+      "categories": ["Wisdom", "Motivation"]
+    },
+    {
+      "quote": "Fall seven times, stand up eight.",
+      "author": null,
+      "source": "Japanese Proverb",
+      "categories": ["Motivation", "Resilience"]
+    },
+    {
+      "quote": "A journey of a thousand miles begins with a single step.",
+      "author": "Lao Tzu",
+      "source": null,
+      "categories": ["Wisdom", "Motivation"]
+    },
+    {
+      "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+      "author": null,
+      "source": null,
+      "categories": ["Philosophy", "Self-Development"]
+    },
+    {
+      "quote": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt",
+      "source": null,
+      "categories": ["Motivation", "Self-Development"]
+    }
+  ]
+}

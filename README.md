@@ -31,7 +31,7 @@ Daily philosophical quotes delivered via email - a simple service to brighten yo
 
 ## Development Roadmap
 1. ✅ Planning + DB design
-2. ⏳ Initialize DB + console tools for management
+2. ✅ Initialize DB + console tools for management
 3. ⏳ APScheduler test (email sending logic)
 4. ⏳ Login/registration + subscription logic
 5. ⏳ Main site (user dashboard)

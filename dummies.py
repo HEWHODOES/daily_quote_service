@@ -39,7 +39,8 @@ def signup():
     if request.method == 'POST':
         # Formulardaten aus dem Request holen
         user_name = request.form.get('user_name')
-        email = request.form.get('email')              # Email-Adresse des Users
+        email = request.form.get('email') 
+                     # Email-Adresse des Users
         
         # ======= HIER KOMMT SPÄTER DIE DB-LOGIK =======
         # TODO: User in die Datenbank eintragen
@@ -127,6 +128,7 @@ def get_categories():
 # FLASK-APP STARTEN
 # ============================================================
 if __name__ == '__main__':
+    app.run(debug=True)
     """
     Startet den Flask-Development-Server.
     
@@ -137,4 +139,4 @@ if __name__ == '__main__':
     
     Server läuft auf: http://localhost:5000
     """
-    app.run(debug=True)
+    

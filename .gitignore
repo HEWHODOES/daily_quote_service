@@ -5,6 +5,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+route_tests.py
 
 # Virtual Environment
 venv/

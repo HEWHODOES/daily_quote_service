@@ -13,6 +13,7 @@ cursor.execute("""--sql
                id INTEGER PRIMARY KEY AUTOINCREMENT,
                user_name TEXT NOT NULL,
                email TEXT NOT NULL UNIQUE,
+               password_hash TEXT NOT NULL ,
                created_at TEXT DEFAULT (datetime('now')),
                deleted_at TEXT DEFAULT NULL 
                )
@@ -21,7 +22,7 @@ cursor.execute("""--sql
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS categories (
                id INTEGER PRIMARY KEY AUTOINCREMENT,
-               category_name TEXT NOT NULL)
+               category_name TEXT NOT NULL UNIQUE)
 """)
 
 cursor.execute("""
@@ -36,8 +37,8 @@ cursor.execute("""
 
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS quote_categories (
-               quote_id INTEGER NOT NULL,
-               category_id INTEGER NOT NULL,
+               quote_id INTEGER NOT NULL ,
+               category_id INTEGER NOT NULL ,
                PRIMARY KEY (quote_id, category_id),
                FOREIGN KEY (quote_id) REFERENCES quotes(id) ON DELETE CASCADE,
                FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE

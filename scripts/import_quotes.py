@@ -14,6 +14,8 @@ try:
     with open(json_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
 
+    category_cache = {}
+
     for quote_data in data['quotes']:
         
         cursor.execute("""
@@ -24,10 +26,12 @@ try:
         quote_id = cursor.lastrowid
         
         for category_name in quote_data['categories']:
+            if category_name not in category_cache:
+                cursor.execute("INSERT OR IGNORE INTO categories (category_name) VALUES (?)", (category_name,))            
+                cursor.execute("SELECT id FROM categories WHERE category_name = ?", (category_name,))
+                category_cache[category_name] = cursor.fetchone()[0]
 
-            cursor.execute("INSERT OR IGNORE INTO categories (category_name) VALUES (?)", (category_name,))            
-            cursor.execute("SELECT id FROM categories WHERE category_name = ?", (category_name,))
-            category_id = cursor.fetchone()[0]
+            category_id = category_cache[category_name]
             
             cursor.execute("""
                 INSERT INTO quote_categories (quote_id, category_id)
